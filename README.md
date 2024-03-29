@@ -33,5 +33,19 @@ gem "local_gem", :path => "../local_gem"
 ```
 
 ### Testing
-In most cases "empty" and not "nil" for tests.
+- In most cases "empty" and not "nil" for tests.
+- How to run tests:
+``` 
+rails test
+```
+- Where to find tests:
+- spec/spec_helper.rb | contains RSPec specific configs
+- spec/rails_helper.rb | contains Rails specific configs
 
+#### Types of tests
+***Unit Tests***
+Models, individual units of the app. Ex: Ensuring validations are working...
+***Functional Tests***
+Controllers, is a function working? Ex: Preventing a non-logged in user from performing an action.
+***Integration Tests***
+Full feature testing, from start to finish. Ex: Testing a business process like a user signing up for an app. 
