@@ -21,3 +21,13 @@ puts first_name + last_name
 # string interpolation example, only works with double quotes
 puts "Mein Vornamme ist #{first_name} und mein Nachname ist #{last_name}."
 
+# How to write alias method calls
+class ApplicationController
+  # Define your original method
+  def original_method
+    # Method implementation
+  end
+
+  # Create an alias for the original method
+  alias_method :alias_method_name, :original_method
+end
